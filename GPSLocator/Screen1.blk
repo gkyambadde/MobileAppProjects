@@ -1,0 +1,491 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="75" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="1366" page-height="1600" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="1943" genus-name="LocationSensor-LocationChanged" has-focus="yes" >
+<Location><X>714</X><Y>99</Y></Location>
+<Label>LocationSensor1.LocationChanged</Label>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="latitude" position-type="single" con-block-id="1947" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="longitude" position-type="single" con-block-id="1949" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="altitude" position-type="single" con-block-id="1951" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1959" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>CurrentAddressDataLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1959" genus-name="componentSetter" >
+<Location><X>775</X><Y>191</Y></Location>
+<Label>CurrentAddressDataLabel.Text</Label>
+<BeforeBlockId>1943</BeforeBlockId>
+<AfterBlockId>1965</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1961" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>CurrentLatLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1965" genus-name="componentSetter" >
+<Location><X>775</X><Y>229</Y></Location>
+<Label>CurrentLatLabel.Text</Label>
+<BeforeBlockId>1959</BeforeBlockId>
+<AfterBlockId>1967</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1971" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>CurrentLonLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1967" genus-name="componentSetter" >
+<Location><X>775</X><Y>267</Y></Location>
+<Label>CurrentLonLabel.Text</Label>
+<BeforeBlockId>1965</BeforeBlockId>
+<AfterBlockId>1975</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1973" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>RememberButton.Enabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1975" genus-name="componentSetter" >
+<Location><X>775</X><Y>305</Y></Location>
+<Label>RememberButton.Enabled</Label>
+<BeforeBlockId>1967</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1977" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1977" genus-name="true" >
+<Location><X>983</X><Y>308</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>longitude</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="1973" genus-name="getter" >
+<Location><X>959</X><Y>270</Y></Location>
+<Label>longitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1967" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>latitude</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="1971" genus-name="getter" >
+<Location><X>955</X><Y>232</Y></Location>
+<Label>latitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1965" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>LocationSensor1.CurrentAddress</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="1961" genus-name="componentGetter" >
+<Location><X>1011</X><Y>194</Y></Location>
+<Label>LocationSensor1.CurrentAddress</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1959" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="1951" genus-name="argument" >
+<Location><X>1022</X><Y>158</Y></Location>
+<Label>altitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1943" ></BlockConnector></Plug>
+</Block>
+<Block id="1949" genus-name="argument" >
+<Location><X>1022</X><Y>130</Y></Location>
+<Label>longitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1943" ></BlockConnector></Plug>
+</Block>
+<Block id="1947" genus-name="argument" >
+<Location><X>1022</X><Y>102</Y></Location>
+<Label>latitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1943" ></BlockConnector></Plug>
+</Block>
+<Block id="2025" genus-name="Button-Click" >
+<Location><X>718</X><Y>786</Y></Location>
+<Label>DirectionButton.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2029" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>ActivityStarter1.DataUri</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2029" genus-name="componentSetter" >
+<Location><X>746</X><Y>819</Y></Location>
+<Label>ActivityStarter1.DataUri</Label>
+<BeforeBlockId>2025</BeforeBlockId>
+<AfterBlockId>2051</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2031" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2051" genus-name="ActivityStarter-StartActivity" >
+<Location><X>746</X><Y>1081</Y></Location>
+<Label>ActivityStarter1.StartActivity</Label>
+<BeforeBlockId>2029</BeforeBlockId>
+</Block>
+<Block id="2031" genus-name="string-vappend" >
+<Location><X>940</X><Y>822</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2029" ></BlockConnector></Plug>
+<Sockets num-sockets="9" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2033" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2039" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2037" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2041" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2043" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2045" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2049" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2047" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>RemeberedLongLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2047" genus-name="componentGetter" >
+<Location><X>1078</X><Y>1018</Y></Location>
+<Label>RemeberedLongLabel.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2049" genus-name="text" >
+<Location><X>1078</X><Y>990</Y></Location>
+<Label>,</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>RemeberedLatLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2045" genus-name="componentGetter" >
+<Location><X>1078</X><Y>962</Y></Location>
+<Label>RemeberedLatLabel.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2043" genus-name="text" >
+<Location><X>1078</X><Y>934</Y></Location>
+<Label>&amp;daddr=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>CurrentLonLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2041" genus-name="componentGetter" >
+<Location><X>1078</X><Y>906</Y></Location>
+<Label>CurrentLonLabel.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2037" genus-name="text" >
+<Location><X>1078</X><Y>878</Y></Location>
+<Label>,</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>CurrentLatLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2039" genus-name="componentGetter" >
+<Location><X>1078</X><Y>850</Y></Location>
+<Label>CurrentLatLabel.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2033" genus-name="text" >
+<Location><X>1078</X><Y>822</Y></Location>
+<Label>http:\/\/maps.google.com\/maps?saddr=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+</Block>
+<Block id="1979" genus-name="Button-Click" >
+<Location><X>715</X><Y>369</Y></Location>
+<Label>RememberButton.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1983" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>RemeberedAddressLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1983" genus-name="componentSetter" >
+<Location><X>743</X><Y>402</Y></Location>
+<Label>RemeberedAddressLabel.Text</Label>
+<BeforeBlockId>1979</BeforeBlockId>
+<AfterBlockId>1987</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1985" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>CurrentLatLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1987" genus-name="componentSetter" >
+<Location><X>743</X><Y>440</Y></Location>
+<Label>CurrentLatLabel.Text</Label>
+<BeforeBlockId>1983</BeforeBlockId>
+<AfterBlockId>1989</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1991" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>CurrentLonLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1989" genus-name="componentSetter" >
+<Location><X>743</X><Y>478</Y></Location>
+<Label>CurrentLonLabel.Text</Label>
+<BeforeBlockId>1987</BeforeBlockId>
+<AfterBlockId>1995</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1993" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1995" genus-name="TinyDB-StoreValue" >
+<Location><X>743</X><Y>516</Y></Location>
+<Label>TinyDB1.StoreValue</Label>
+<BeforeBlockId>1989</BeforeBlockId>
+<AfterBlockId>2003</AfterBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2005" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="valueToStore" position-type="single" con-block-id="2015" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2003" genus-name="TinyDB-StoreValue" >
+<Location><X>743</X><Y>582</Y></Location>
+<Label>TinyDB1.StoreValue</Label>
+<BeforeBlockId>1995</BeforeBlockId>
+<AfterBlockId>1999</AfterBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2009" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="valueToStore" position-type="single" con-block-id="2017" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1999" genus-name="TinyDB-StoreValue" >
+<Location><X>743</X><Y>648</Y></Location>
+<Label>TinyDB1.StoreValue</Label>
+<BeforeBlockId>2003</BeforeBlockId>
+<AfterBlockId>2021</AfterBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2013" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="valueToStore" position-type="single" con-block-id="2019" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>DirectionButton.Enabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2021" genus-name="componentSetter" >
+<Location><X>743</X><Y>714</Y></Location>
+<Label>DirectionButton.Enabled</Label>
+<BeforeBlockId>1999</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2023" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2023" genus-name="true" >
+<Location><X>939</X><Y>717</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2021" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>LocationSensor1.Longitude</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2019" genus-name="componentGetter" >
+<Location><X>977</X><Y>679</Y></Location>
+<Label>LocationSensor1.Longitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2013" genus-name="text" >
+<Location><X>977</X><Y>651</Y></Location>
+<Label>long</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>LocationSensor1.Latitude</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2017" genus-name="componentGetter" >
+<Location><X>977</X><Y>613</Y></Location>
+<Label>LocationSensor1.Latitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2003" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2009" genus-name="text" >
+<Location><X>977</X><Y>585</Y></Location>
+<Label>lat</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2003" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>LocationSensor1.CurrentAddress</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2015" genus-name="componentGetter" >
+<Location><X>977</X><Y>547</Y></Location>
+<Label>LocationSensor1.CurrentAddress</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1995" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2005" genus-name="text" >
+<Location><X>977</X><Y>519</Y></Location>
+<Label>address</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1995" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>LocationSensor1.Longitude</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="1993" genus-name="componentGetter" >
+<Location><X>927</X><Y>481</Y></Location>
+<Label>LocationSensor1.Longitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1989" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>LocationSensor1.Latitude</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="1991" genus-name="componentGetter" >
+<Location><X>923</X><Y>443</Y></Location>
+<Label>LocationSensor1.Latitude</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1987" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>LocationSensor1.CurrentAddress</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="1985" genus-name="componentGetter" >
+<Location><X>977</X><Y>405</Y></Location>
+<Label>LocationSensor1.CurrentAddress</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1983" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2107" genus-name="true" >
+<Location><X>366</X><Y>320</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2105" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>DirectionButton.Enabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2105" genus-name="componentSetter" >
+<Location><X>170</X><Y>317</Y></Location>
+<Label>DirectionButton.Enabled</Label>
+<BeforeBlockId>2097</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2107" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2101" genus-name="TinyDB-GetValue" >
+<Location><X>384</X><Y>278</Y></Location>
+<Label>TinyDB1.GetValue</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2097" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2103" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2103" genus-name="text" >
+<Location><X>562</X><Y>278</Y></Location>
+<Label>long</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2101" ></BlockConnector></Plug>
+</Block>
+<Block id="2093" genus-name="TinyDB-GetValue" >
+<Location><X>374</X><Y>236</Y></Location>
+<Label>TinyDB1.GetValue</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2091" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2095" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2095" genus-name="text" >
+<Location><X>552</X><Y>236</Y></Location>
+<Label>lat</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2093" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>RemeberedLongLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2097" genus-name="componentSetter" >
+<Location><X>170</X><Y>275</Y></Location>
+<Label>RemeberedLongLabel.Text</Label>
+<BeforeBlockId>2091</BeforeBlockId>
+<AfterBlockId>2105</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2101" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>RemeberedLatLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2091" genus-name="componentSetter" >
+<Location><X>170</X><Y>233</Y></Location>
+<Label>RemeberedLatLabel.Text</Label>
+<BeforeBlockId>2085</BeforeBlockId>
+<AfterBlockId>2097</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2093" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>TempAddress</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2089" genus-name="getterGlobal" >
+<Location><X>404</X><Y>198</Y></Location>
+<Label>TempAddress</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2085" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>RemeberedAddressLabel.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2085" genus-name="componentSetter" >
+<Location><X>170</X><Y>195</Y></Location>
+<Label>RemeberedAddressLabel.Text</Label>
+<BeforeBlockId>2073</BeforeBlockId>
+<AfterBlockId>2091</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2089" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2081" genus-name="number" >
+<Location><X>523</X><Y>157</Y></Location>
+<Label>0</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2075" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>TempAddress</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2079" genus-name="getterGlobal" >
+<Location><X>326</X><Y>157</Y></Location>
+<Label>TempAddress</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2077" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2077" genus-name="string-length" >
+<Location><X>210</X><Y>157</Y></Location>
+<Label>length</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2075" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" position-type="single" con-block-id="2079" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2075" genus-name="greaterthan" >
+<Location><X>200</X><Y>150</Y></Location>
+<Label>&gt;</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2073" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2077" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2081" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2073" genus-name="if" >
+<Location><X>118</X><Y>147</Y></Location>
+<Label>if</Label>
+<BeforeBlockId>2067</BeforeBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2075" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2085" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2071" genus-name="text" >
+<Location><X>470</X><Y>108</Y></Location>
+<Label>address</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2069" ></BlockConnector></Plug>
+</Block>
+<Block id="2053" genus-name="Screen-Initialize" >
+<Location><X>90</X><Y>72</Y></Location>
+<Label>Screen1.Initialize</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2067" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>TempAddress</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2067" genus-name="setterGlobal" >
+<Location><X>118</X><Y>105</Y></Location>
+<Label>TempAddress</Label>
+<BeforeBlockId>2053</BeforeBlockId>
+<AfterBlockId>2073</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2069" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2069" genus-name="TinyDB-GetValue" >
+<Location><X>292</X><Y>108</Y></Location>
+<Label>TinyDB1.GetValue</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2067" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="tag" position-type="single" con-block-id="2071" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2057" genus-name="def" >
+<Location><X>397</X><Y>33</Y></Location>
+<Label>TempAddress</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="2065" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2065" genus-name="text" >
+<Location><X>553</X><Y>33</Y></Location>
+<Label>text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2057" ></BlockConnector></Plug>
+</Block>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="-645203379" component-id="ActivityStarter1" component-genus="ActivityStarter" component-version="4" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1340877043" component-id="DirectionButton" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1257006753" component-id="RememberButton" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1684035198" component-id="HorizontalArrangement4" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1018290370" component-id="GPSLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1756198452" component-id="TinyDB1" component-genus="TinyDB" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="455048803" component-id="RemeberedAddressLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1572590588" component-id="HorizontalArrangement3" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1293391907" component-id="CommaLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1941411435" component-id="RemeberedLatLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1046733132" component-id="CurrentAddressDataLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-381591631" component-id="Label1" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="456602979" component-id="HorizontalArrangement1" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="0" component-id="Screen1" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-201368186" component-id="RemeberedLongLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1151036693" component-id="RemeberHeaderLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-882397707" component-id="CurrentLatLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1216117088" component-id="RemeberedAddressDataLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-995275355" component-id="CurrentAddressLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1139084449" component-id="CurrentLonLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-71925633" component-id="RemeberedCommaLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-186721167" component-id="LocationSensor1" component-genus="LocationSensor" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1369798811" component-id="HorizontalArrangement2" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1042733161" component-id="RemeberedGPSLabel" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>
