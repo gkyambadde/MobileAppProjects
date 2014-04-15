@@ -1,0 +1,67 @@
+{
+    "androidBuild": {
+        "applicationName": "LocationManager",
+        "applicationId": "com.mycompany.myAppID",
+        "configuration": "Debug",
+        "androidAPILevel": "8",
+        "versionString": "1.0",
+        "versionCode": "1",
+        "sdkPath": "C:/Android Development/adt-bundle-windows-x86-20131030/sdk",
+        "permissions": [
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CAMERA",
+            "VIBRATE",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "CALL_PHONE"
+        ],
+        "icon": {
+            "36": "resources/icons/Icon_Android36.png",
+            "48": "resources/icons/Icon_Android48.png",
+            "72": "resources/icons/Icon~ipad.png"
+        },
+        "orientations": [
+            "portrait",
+            "portraitUpsideDown",
+            "landscapeLeft",
+            "landscapeRight"
+        ],
+        "certificatePassword": "",
+        "certificatePath": "",
+        "certificateAlias": "EmptyValue",
+        "clean": false
+    },
+    "androidSimulate": {
+        "applicationName": "LocationManager",
+        "applicationId": "com.mycompany.myAppID",
+        "configuration": "Debug",
+        "androidAPILevel": "8",
+        "versionString": "1.0",
+        "versionCode": "1",
+        "sdkPath": "C:/Android Development/adt-bundle-windows-x86-20131030/sdk",
+        "permissions": [
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CAMERA",
+            "VIBRATE",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "CALL_PHONE"
+        ],
+        "icon": {
+            "36": "resources/icons/Icon_Android36.png",
+            "48": "resources/icons/Icon_Android48.png",
+            "72": "resources/icons/Icon~ipad.png"
+        },
+        "orientations": [
+            "landscapeRight"
+        ],
+        "clean": false
+    },
+    "webBuild": {
+        "environment": "testing",
+        "clean": "on",
+        "publishPath": "C:/Users/shadowalker/Desktop/andApp"
+    }
+}
